@@ -14,6 +14,6 @@ public class User extends BaseModel{
     private String name;
     private String emailId;
     private String phoneNo;
-    @OneToMany
+    @OneToMany(mappedBy = "user")
     private List<Booking> bookings;
 }
